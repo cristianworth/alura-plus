@@ -1,0 +1,26 @@
+:root {
+  --main-white: #ffffff;
+  --alt-grey: #c0c0c0;
+  --blue-button: #167bf7;
+  --main-background: #00030c;
+}
+
+body {
+  background-color: var(--main-background);
+  color: var(--main-white);
+}
+
+.main {
+  background-image: url(img/Background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
