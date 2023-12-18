@@ -19,10 +19,12 @@ body {
   padding: 0;
 }
 
-.main {
+.main_section {
   background-image: url(img/Background.png);
   background-repeat: no-repeat;
   background-size: contain;
+  align-items: center; /* Put all items align on center, keep in mind that the current main section it's divided by 50/50 with the image. */
+  text-align: center; /* Align text just like any text editor, like word, etc. */
 }
 
 .container {
@@ -38,9 +40,10 @@ body {
   color: var(--main-white);
   display: block;
   text-decoration: none;
+  margin-bottom: 1em; /* Margin between the two buttons. */
 }
 
-.alternative-button {
+.transparent_button {
   background-color: transparent;
   border: 2px solid var(--main-white);
 }
@@ -53,4 +56,41 @@ body {
 .title_container {
   font-size: 28px;
   font-weight: 700;
+}
+
+.box_container {
+  margin: 0 6em; /* 0 = top/bottom ---- 10 = right/left */
+}
+
+.image_container {
+  width: 80%; /* Turn image bigger. */ 
+}
+
+.alternative_image {
+  width: 80%; /* Turn image bigger. */
+}
+
+.alternative_section {
+  align-items: center;
+  margin: 0 10em; /* 0 = top/bottom ---- 10 = right/left */
+}
+
+.title_description {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--main-white);
+  margin-bottom: 0.1em; /* Margin between the title and text. */
+}
+
+.text_description {
+  color: var(--alt-grey);
+}
+
+.alternative_button {
+  display: inline-block; /* Don't allow the button to use the entire line, use inline intead. */
+  margin-top: 1em;
+}
+
+.description_container {
+  padding: 2em;
 }
