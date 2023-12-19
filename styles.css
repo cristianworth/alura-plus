@@ -3,6 +3,7 @@
   --alt-grey: #c0c0c0;
   --blue-button: #167bf7;
   --main-background: #00030c;
+  --light-blue: aqua;
   --main-font: "Inter";
 }
 
@@ -23,8 +24,10 @@ body {
   background-image: url(img/Background.png);
   background-repeat: no-repeat;
   background-size: contain;
-  align-items: center; /* Put all items align on center, keep in mind that the current main section it's divided by 50/50 with the image. */
-  text-align: center; /* Align text just like any text editor, like word, etc. */
+  align-items: center;
+  /* Put all items align on center, keep in mind that the current main section it's divided by 50/50 with the image. */
+  text-align: center;
+  /* Align text just like any text editor, like word, etc. */
 }
 
 .container {
@@ -40,7 +43,8 @@ body {
   color: var(--main-white);
   display: block;
   text-decoration: none;
-  margin-bottom: 1em; /* Margin between the two buttons. */
+  margin-bottom: 1em;
+  /* Margin between the two buttons. */
 }
 
 .transparent_button {
@@ -58,28 +62,32 @@ body {
   font-weight: 700;
 }
 
-.box_container {
-  margin: 0 6em; /* 0 = top/bottom ---- 10 = right/left */
+.image_container {
+  margin: 1em 0 2em 0;
 }
 
-.image_container {
-  width: 80%; /* Turn image bigger. */ 
+.box_container {
+  margin: 0 6em;
+  /* 0 = top/bottom ---- 10 = right/left */
 }
 
 .alternative_image {
-  width: 80%; /* Turn image bigger. */
+  width: 80%;
+  /* Turn image bigger. */
 }
 
 .alternative_section {
   align-items: center;
-  margin: 0 10em; /* 0 = top/bottom ---- 10 = right/left */
+  margin: 0 10em;
+  /* 0 = top/bottom ---- 10 = right/left */
 }
 
 .title_description {
   font-weight: 700;
   font-size: 48px;
   color: var(--main-white);
-  margin-bottom: 0.1em; /* Margin between the title and text. */
+  margin-bottom: 0.1em;
+  /* Margin between the title and text. */
 }
 
 .text_description {
@@ -87,10 +95,73 @@ body {
 }
 
 .alternative_button {
-  display: inline-block; /* Don't allow the button to use the entire line, use inline intead. */
+  display: inline-block;
+  /* Don't allow the button to use the entire line, use inline intead. */
   margin-top: 1em;
 }
 
 .description_container {
   padding: 2em;
+}
+
+.devices_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 5em 0;
+}
+
+.devices_section {
+  text-align: center;
+}
+
+.devices_title {
+  font-size: 48px;
+  color: var(--main-white);
+}
+
+.devices_item {
+  font-size: 32px;
+  color: var(--main-white);
+}
+
+.footer_section {
+  text-align: center;
+  margin: 5em 3em;
+}
+
+.footer_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 1em;
+}
+
+.footer_list_items a {
+  text-decoration: none;
+  color: var(--main-white);
+  margin-left: 1em;
+}
+
+.footer_text {
+  margin: 1em 0;
+  color: var(--alt-grey);
+  font-size: 14px;
+}
+
+.footer_image {
+  width: 5%;
+}
+
+.footer_list_items a:hover {
+  color: var(--blue-button);
+}
+
+.footer_list_items a:active {
+  color: var(--light-blue);
+}
+
+.alternative_button:hover {
+  background-color: var(--light-blue);
+  color: var(--main-background);
 }
