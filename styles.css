@@ -165,3 +165,36 @@ body {
   background-color: var(--light-blue);
   color: var(--main-background);
 }
+
+/*this media will only be effective when the scren size is 768px (mobile)*/
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+    background-image: none;
+  }
+
+  .image_container {
+    width: 50vw;
+  }
+
+  .box_container {
+    margin: 2em 2em;
+  }
+  
+  .alternative_section {
+    margin: 0;
+    text-align: center;
+  }
+
+  .alternative_image {
+    width: 50vw;
+  }
+
+  .devices_list {
+    display: block;
+  }
+
+  .footer_list {
+    display: block;
+  }
+}
